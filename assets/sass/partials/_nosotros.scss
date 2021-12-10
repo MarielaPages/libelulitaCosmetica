@@ -1,0 +1,47 @@
+/*Seccion Nosotros*/
+.imagen__nosotros__superior{
+    margin-top: 2rem;
+}
+.header__nosotros{
+    font-size: 4.8rem;
+    margin:auto;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    color: $brown;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+.nosotros__texto__superior{
+    width: 55%;
+    margin:auto;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+.seccion__caracteristicas__productos{
+    width:55%;
+    background-color: $veige;
+    margin:auto;
+    padding:3rem;
+}
+.header2__nosotros{
+    font-size: 3.4rem;
+    margin:auto;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    color: $brown;
+    padding-bottom: 2rem;
+}
+.nosotros__texto__inferior{
+    width: 55%;
+    margin: auto;
+    text-align: justify;
+}
+.header3__nosotros{
+    font-size: 2.8rem;
+    margin:auto;
+    font-family: 'Cormorant Garamond', serif;
+    text-align:left;
+    width: 80%;
+    color: $brown;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,91 @@
+/*secciones particulares de cada producto*/
+.catalogoInd{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    &__slider{
+       #catalogoInd{
+        position: relative;
+        .owl-nav{
+            position: absolute;
+            width: 100%;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+            .owl-next,.owl-prev{
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                background-color: $white;
+                box-shadow: 0 0 10px $grey-light;
+                transition: all .3s ease;
+
+                &:hover{
+                    background-color: $grey-light;
+                    transition: all .3s ease;
+                }
+
+                span{
+                    font-size: 20px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    color: $black;
+                    height: 10px;
+                    transition: all .3s ease;
+
+                    &:hover{
+                        color: $pink;
+                    }
+                }
+            }
+
+            .owl-next{
+                right: -5rem;
+            }
+
+            .owl-prev{
+                left: -5rem;
+            }
+        }  
+       }
+    }
+}
+.producto__individual{
+    width:50%;
+    margin-bottom: 4rem;
+    margin:auto;
+    text-align:justify;
+}
+.boton-comprar{
+    width: 16rem;
+    height:3.5rem;
+    background-color: #fff2f2;
+    border: none;
+    box-shadow: -2px -2px 3px #F9D6D6;
+    border-radius: 0 15px 0 0;
+    a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.4rem;
+    }
+}
+.banner-comprar{
+    background-color: #fff2f2;
+    text-align: center;
+    margin-top: 4rem;
+    height:7rem;
+    a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.8rem;
+    }
+}
+.imagen__producto__individual{
+    margin:auto;
+    width:50%;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}

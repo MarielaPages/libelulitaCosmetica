@@ -1,0 +1,1288 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=EB+Garamond&display=swap");
+header nav {
+  width: 100%;
+  position: relative; }
+  header nav .navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    header nav .navbar-nav .nav-item {
+      margin: 0 1rem;
+      font-weight: 400;
+      transition: all .3s ease; }
+      header nav .navbar-nav .nav-item:hover {
+        font-weight: 700;
+        transition: all .3s ease; }
+      header nav .navbar-nav .nav-item .nav-link {
+        color: #000; }
+  header nav .logo {
+    max-width: 100px;
+    width: 100%; }
+  header nav .menu-social-header {
+    display: flex;
+    flex-direction: row; }
+    header nav .menu-social-header a {
+      display: inline-block;
+      font-weight: 400;
+      color: #000;
+      text-decoration: none;
+      margin: 0 1rem;
+      position: relative; }
+      header nav .menu-social-header a:hover {
+        font-weight: 700;
+        transition: all .3s ease; }
+
+.footer {
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  background-color: #FFF9F4;
+  border-bottom: 30px solid #fff2f2; }
+  .footer footer {
+    width: 100%;
+    text-align: center; }
+    .footer footer a {
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      color: #000; }
+    .footer footer h4 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.2em;
+      text-align: center; }
+      .footer footer h4.line {
+        position: relative;
+        padding: .5rem; }
+        .footer footer h4.line::after {
+          content: " ";
+          position: absolute;
+          width: 40%;
+          height: 5%;
+          transform: translate(-50%, -50%);
+          left: 50%;
+          /*Controla eje horizontal*/
+          bottom: 0%;
+          /*Controla eje vertical*/
+          transform: translate(-50%, -50%);
+          /*Resta el valor del eje*/
+          background-color: #000; }
+    .footer footer .menu-social-header {
+      text-align: center; }
+      .footer footer .menu-social-header a {
+        display: inline-block;
+        margin: 0 1rem;
+        border-radius: 50%;
+        box-shadow: 0px 1px 2px #7d7d7d;
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        position: relative; }
+        .footer footer .menu-social-header a:hover {
+          background-color: #fff2f2;
+          box-shadow: 0px 1px 2px #9EFCC4; }
+        .footer footer .menu-social-header a i {
+          color: black;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+
+::selection {
+  color: #fff;
+  background: #fff2f2; }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #b8b8b8;
+  border-radius: 10px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e7e7e7;
+  border-radius: 10px; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b8b8b8; }
+
+a {
+  transition: all .3s ease;
+  display: inline-block; }
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem; }
+
+h1 {
+  font-size: 4.8rem; }
+
+h2 {
+  font-size: 3.6rem; }
+
+h3 {
+  font-size: 2.4rem; }
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem; }
+
+.navbar-toggler {
+  box-shadow: 0px 0px 6px 0rem; }
+
+.navbar-toggler:focus {
+  box-shadow: 0px 0px 6px 0rem; }
+
+.sinpadding {
+  padding: 0; }
+
+.btnProducto {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #FFF9F4;
+  max-width: 180px;
+  width: 100%;
+  font-family: "Prata", serif;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  padding: .5rem 1rem;
+  border-radius: 0 15px 0 0;
+  box-shadow: 2px 2px 3px #fae7d8; }
+  .btnProducto:hover {
+    background-color: #b8b8b8;
+    color: #fff; }
+
+.btnProductoPink {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #fff2f2;
+  max-width: 200px;
+  width: 100%;
+  font-family: "Prata", serif;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  padding: .5rem 1rem;
+  border-radius: 0 15px 0 0;
+  box-shadow: 2px 2px 3px #fae7d8; }
+  .btnProductoPink:hover {
+    background-color: #b8b8b8;
+    color: #fff; }
+
+.wApp {
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #9EFCC4; }
+  .wApp i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem; }
+  .wApp:hover {
+    background-color: #b8b8b8;
+    color: #fff; }
+
+.compraAhora {
+  display: flex;
+  align-items: center;
+  min-height: 18vh;
+  background-color: #fff2f2; }
+  .compraAhora h4 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    margin-top: 1rem; }
+    .compraAhora h4 a {
+      float: right;
+      text-decoration: none;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #9EFCC4;
+      position: relative;
+      bottom: .5rem;
+      transition: all .3s ease; }
+      .compraAhora h4 a i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff; }
+      .compraAhora h4 a:hover {
+        background-color: #b8b8b8; }
+    .compraAhora h4 br {
+      display: none; }
+
+/*INICIA ESTILOS INDEX*/
+.carrouselIndex .carousel-control-prev-icon {
+  background-color: #ffffff00 !important; }
+
+.carrouselIndex .carousel-control-next-icon {
+  background-color: #ffffff00 !important; }
+
+.carrouselIndex .carousel-inner .carousel-item {
+  position: relative; }
+  .carrouselIndex .carousel-inner .carousel-item img {
+    filter: contrast(0.8); }
+  .carrouselIndex .carousel-inner .carousel-item .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 2;
+    max-width: 1200px;
+    padding: 1.5rem; }
+    .carrouselIndex .carousel-inner .carousel-item .carousel-caption .title1 {
+      font-family: "Prata", serif;
+      font-size: 7rem;
+      width: 100%;
+      text-shadow: 0 0 10px #646464;
+      text-align: left; }
+      .carrouselIndex .carousel-inner .carousel-item .carousel-caption .title1::after {
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 5vh;
+        top: 0;
+        right: 0;
+        background-image: url("../assets/img/index/iconos.png");
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        filter: drop-shadow(0px 0px 10px #646464); }
+    .carrouselIndex .carousel-inner .carousel-item .carousel-caption .title2 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 4rem;
+      text-shadow: 0 0 7px #646464;
+      font-size: 5rem;
+      text-align: left;
+      line-height: 4rem; }
+      .carrouselIndex .carousel-inner .carousel-item .carousel-caption .title2 label {
+        font-family: "Prata", serif; }
+      .carrouselIndex .carousel-inner .carousel-item .carousel-caption .title2 span {
+        color: #9EFCC4;
+        text-align: right; }
+    .carrouselIndex .carousel-inner .carousel-item .carousel-caption .title3 {
+      font-family: "Cormorant Garamond", serif;
+      font: 5rem;
+      text-align: left;
+      line-height: 4.5rem;
+      text-shadow: 0 0 7px #646464; }
+      .carrouselIndex .carousel-inner .carousel-item .carousel-caption .title3 span {
+        font-weight: 600; }
+      .carrouselIndex .carousel-inner .carousel-item .carousel-caption .title3 label {
+        font-family: "Prata", serif; }
+
+.productosDestacados {
+  padding: 5rem 1rem; }
+  .productosDestacados #productos .item a {
+    display: block;
+    width: 100%;
+    height: 60vh;
+    background-position: center center;
+    background-size: cover;
+    text-decoration: none;
+    position: relative;
+    padding: 1rem;
+    z-index: 1; }
+    .productosDestacados #productos .item a::after {
+      position: absolute;
+      content: " ";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: black;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.860679) 100%); }
+    .productosDestacados #productos .item a span {
+      color: #fff2f2;
+      font-size: 3.5rem;
+      font-family: "Prata", serif;
+      text-shadow: 0px 1px 3px #8d8d8d;
+      position: absolute;
+      right: .5rem;
+      bottom: 0;
+      z-index: 2; }
+    .productosDestacados #productos .item a.mascarilla {
+      background-image: url("../assets/img/index/mascarilla.png"); }
+    .productosDestacados #productos .item a.aguaRosas {
+      background-image: url("../assets/img/index/aguadeRosas.jpg"); }
+    .productosDestacados #productos .item a.miel {
+      background-image: url("../assets/img/index/miel.jpg"); }
+    .productosDestacados #productos .item a:hover {
+      filter: sepia(0.5); }
+
+.texto {
+  padding: 4rem 1rem 7rem 1rem; }
+  .texto h2 {
+    font-family: "Prata", serif;
+    line-height: 3.5rem;
+    color: #745739; }
+    .texto h2 span {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 300; }
+    .texto h2 label {
+      float: right; }
+
+.conoceProductos {
+  padding: 5rem 1rem;
+  background-color: #fff2f2; }
+  .conoceProductos h3 {
+    font-family: "Prata", serif;
+    font-size: 1.5rem; }
+    .conoceProductos h3 a {
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      text-align: right;
+      color: #000;
+      display: block;
+      font-weight: 300;
+      position: relative;
+      right: 0;
+      transition: all .3s ease; }
+      .conoceProductos h3 a i {
+        font-weight: 300; }
+      .conoceProductos h3 a:hover {
+        right: 1rem;
+        color: #fff;
+        transition: all .3s ease; }
+
+.sliderCatalogo {
+  padding: 5rem 1rem; }
+  .sliderCatalogo #sliderCatalogo .item img {
+    transition: all .3s ease; }
+  .sliderCatalogo #sliderCatalogo .item .btnContacto .btnProducto {
+    position: relative;
+    bottom: 2rem; }
+  .sliderCatalogo #sliderCatalogo .item .btnContacto .wApp {
+    float: right;
+    position: relative;
+    bottom: 4rem;
+    right: 1rem; }
+
+/*Seccion Nosotros*/
+.imagen__nosotros__superior {
+  margin-top: 2rem; }
+
+.header__nosotros {
+  font-size: 4.8rem;
+  margin: auto;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: center;
+  color: #745739;
+  margin-bottom: 2rem;
+  margin-top: 4rem; }
+
+.nosotros__texto__superior {
+  width: 55%;
+  margin: auto;
+  text-align: justify;
+  margin-bottom: 2rem; }
+
+.seccion__caracteristicas__productos {
+  width: 55%;
+  background-color: #FFF9F4;
+  margin: auto;
+  padding: 3rem; }
+
+.header2__nosotros {
+  font-size: 3.4rem;
+  margin: auto;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: center;
+  color: #745739;
+  padding-bottom: 2rem; }
+
+.nosotros__texto__inferior {
+  width: 55%;
+  margin: auto;
+  text-align: justify; }
+
+.header3__nosotros {
+  font-size: 2.8rem;
+  margin: auto;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: left;
+  width: 80%;
+  color: #745739;
+  margin-bottom: 2rem; }
+
+/*Seccion Catálogo*/
+.productos {
+  margin-top: 4rem;
+  position: relative;
+  height: 80%; }
+  .productos::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 90%;
+    background-image: url("../assets/img/catalogo/catalogo-imagen-superior.png");
+    background-size: cover;
+    background-position: center center;
+    z-index: -1; }
+  .productos__txt {
+    position: relative; }
+    .productos__txt h1 {
+      font-size: 5rem;
+      font-family: "Cormorant Garamond", serif;
+      color: #745739;
+      line-height: 5rem; }
+    .productos__txt p, .productos__txt ul {
+      margin-left: 8rem; }
+    .productos__txt ul li {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.2rem; }
+    .productos__txt p {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.6rem; }
+
+.catalogoProductos {
+  margin-top: 3rem; }
+
+.imagen-producto {
+  text-align: center; }
+  .imagen-producto img {
+    margin-bottom: 2rem;
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto; }
+
+.boton-producto {
+  background-color: #FFF9F4;
+  font-family: 'EB Garamond', serif;
+  text-align: center;
+  text-decoration: none;
+  max-width: 150px;
+  padding: .4rem 0;
+  width: 100%;
+  border: none;
+  box-shadow: 2px 2px 3px #fae7d8;
+  border-radius: 0 15px 0 0;
+  color: #000;
+  display: inline-block;
+  transition: all 0.3s ease; }
+  .boton-producto:hover {
+    background-color: #b8b8b8;
+    color: #fff; }
+
+.leyendas-productos {
+  position: relative;
+  top: 1rem; }
+  .leyendas-productos p {
+    line-height: 1.2rem; }
+    .leyendas-productos p:last-child {
+      position: relative;
+      bottom: .5rem; }
+
+.producto {
+  margin-bottom: 4rem; }
+  .producto .productoTexto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+/*secciones particulares de cada producto*/
+.catalogoInd {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  .catalogoInd__slider #catalogoInd {
+    position: relative; }
+    .catalogoInd__slider #catalogoInd .owl-nav {
+      position: absolute;
+      width: 100%;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .catalogoInd__slider #catalogoInd .owl-nav .owl-next, .catalogoInd__slider #catalogoInd .owl-nav .owl-prev {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: #fff;
+        box-shadow: 0 0 10px #e7e7e7;
+        transition: all .3s ease; }
+        .catalogoInd__slider #catalogoInd .owl-nav .owl-next:hover, .catalogoInd__slider #catalogoInd .owl-nav .owl-prev:hover {
+          background-color: #e7e7e7;
+          transition: all .3s ease; }
+        .catalogoInd__slider #catalogoInd .owl-nav .owl-next span, .catalogoInd__slider #catalogoInd .owl-nav .owl-prev span {
+          font-size: 20px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #000;
+          height: 10px;
+          transition: all .3s ease; }
+          .catalogoInd__slider #catalogoInd .owl-nav .owl-next span:hover, .catalogoInd__slider #catalogoInd .owl-nav .owl-prev span:hover {
+            color: #fff2f2; }
+      .catalogoInd__slider #catalogoInd .owl-nav .owl-next {
+        right: -5rem; }
+      .catalogoInd__slider #catalogoInd .owl-nav .owl-prev {
+        left: -5rem; }
+
+.producto__individual {
+  width: 50%;
+  margin-bottom: 4rem;
+  margin: auto;
+  text-align: justify; }
+
+.boton-comprar {
+  width: 16rem;
+  height: 3.5rem;
+  background-color: #fff2f2;
+  border: none;
+  box-shadow: -2px -2px 3px #F9D6D6;
+  border-radius: 0 15px 0 0; }
+  .boton-comprar a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem; }
+
+.banner-comprar {
+  background-color: #fff2f2;
+  text-align: center;
+  margin-top: 4rem;
+  height: 7rem; }
+  .banner-comprar a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem; }
+
+.imagen__producto__individual {
+  margin: auto;
+  width: 50%;
+  margin-top: 4rem;
+  margin-bottom: 5rem; }
+
+/*Estilos Mayoristas*/
+.mayoristas {
+  margin-top: 4rem;
+  position: relative;
+  height: 28rem; }
+  .mayoristas::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 90%;
+    background-image: url("../assets/img/mayoristas/banner-mayyoristas.png");
+    background-size: cover;
+    background-position: center center;
+    z-index: -1; }
+  .mayoristas__txt {
+    position: relative; }
+    .mayoristas__txt h1 {
+      font-size: 5rem;
+      font-family: "Cormorant Garamond", serif;
+      color: #745739;
+      line-height: 5rem; }
+      .mayoristas__txt h1 span {
+        font-style: italic; }
+    .mayoristas__txt h2 {
+      margin-top: 2rem;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin-left: 5rem; }
+    .mayoristas__txt h3 {
+      font-family: "Prata", serif;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-left: 5rem; }
+    .mayoristas__txt .btnProductoPink {
+      margin-top: 2rem;
+      margin-left: 5rem; }
+
+.mayoristasTxt {
+  margin-top: 1rem;
+  padding: 3rem 1rem; }
+  .mayoristasTxt h4 {
+    font-family: "Montserrat", sans-serif;
+    line-height: 2rem;
+    margin-left: 5rem; }
+    .mayoristasTxt h4 a {
+      text-decoration: none;
+      color: #000;
+      transition: all .3s ease; }
+      .mayoristasTxt h4 a:hover {
+        color: #b8b8b8; }
+  .mayoristasTxt p {
+    margin-left: 5rem;
+    margin-top: 2rem;
+    font-family: "Montserrat", sans-serif; }
+  .mayoristasTxt h5 {
+    margin-top: 2rem;
+    margin-left: 5rem;
+    font-size: 2rem;
+    font-family: "Cormorant Garamond", serif;
+    text-transform: uppercase; }
+
+/*Seccion contacto*/
+.contacto-titulo {
+  font-size: 5rem;
+  font-family: 'Cormorant Garamond', serif;
+  margin-left: 0%;
+  color: #745739;
+  margin-bottom: 2rem; }
+
+.contacto-datos {
+  margin-left: 0%; }
+
+.direccion-retiro {
+  font-size: 2.2rem; }
+
+.correo-electronico {
+  margin-top: 6rem;
+  font-size: 2.2rem; }
+
+.whatsapp {
+  font-size: 2.2rem;
+  position: relative;
+  margin-top: 3rem;
+  padding-top: 3rem; }
+  .whatsapp::after {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: " ";
+    width: 55%;
+    height: 2%;
+    background-color: #000; }
+
+.mensaje-final-contacto {
+  font-size: 2.2rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem; }
+
+/*Estilos seccion contacto*/
+.contacto {
+  position: relative;
+  padding: 3rem 1rem; }
+  .contacto::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../assets/img/geometric-leaves.png");
+    z-index: -1;
+    opacity: .2; }
+  .contacto h1 {
+    font-size: 4rem;
+    font-family: "Cormorant Garamond", serif;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #745739; }
+  .contacto h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3rem; }
+  .contacto p {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 1.5rem; }
+  .contacto__email, .contacto__whatsApp {
+    margin-top: 1rem;
+    padding: 2rem 0; }
+    .contacto__email h3, .contacto__whatsApp h3 {
+      text-transform: uppercase;
+      font-weight: 300; }
+    .contacto__email a, .contacto__whatsApp a {
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: #000;
+      position: relative;
+      left: 0;
+      transition: all .3s ease; }
+      .contacto__email a:hover, .contacto__whatsApp a:hover {
+        color: #b8b8b8;
+        left: 5px; }
+  .contacto__email {
+    position: relative; }
+    .contacto__email::after {
+      position: absolute;
+      content: "";
+      width: 40%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: #000; }
+  .contacto__whatsApp p {
+    margin-top: 2rem; }
+  .contacto h5 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase; }
+
+/*Preguntas Frecuentes*/
+.preguntas {
+  margin-top: 4rem;
+  position: relative;
+  height: 28rem; }
+  .preguntas::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 53%;
+    height: 100%;
+    background-image: url("../assets/img/preguntas-frecuentes-portada.png");
+    background-size: cover;
+    background-position: center center;
+    z-index: -1; }
+  .preguntas__header {
+    font-size: 5rem;
+    font-family: "Cormorant Garamond", serif;
+    line-height: 4.5rem;
+    color: #745739; }
+  .preguntas .te-contamos {
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 3rem;
+    font-size: 2.5rem;
+    margin-top: 2rem; }
+
+.seccion__preguntas {
+  text-align: justify;
+  padding: 1rem;
+  margin-top: 4rem; }
+
+.titulos-preguntas {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  text-align: left; }
+
+.iamgen2-preguntas {
+  margin-bottom: 4rem; }
+
+.ultima-pregunta {
+  margin-top: 3rem;
+  margin-bottom: 8rem; }
+
+/*--------------RESPONSIVE----------*/
+/* extra Small Devices*/
+@media only screen and (min-width: 0px) {
+  p {
+    font-size: 1rem; }
+  .compraAhora {
+    text-align: center; }
+    .compraAhora h4 a {
+      margin-top: 1rem;
+      float: unset; }
+    .compraAhora h4 br {
+      display: block; }
+  .productosDestacados {
+    padding: 2rem 1rem; }
+  .productosDestacados #productos .item a {
+    height: 40vh; }
+    .productosDestacados #productos .item a span {
+      font-size: 2rem; }
+  .texto {
+    padding: 1rem 1rem 3rem 1rem; }
+    .texto h2 {
+      font-size: 2rem;
+      line-height: 2.3rem;
+      text-align: center; }
+      .texto h2 br {
+        display: none; }
+  .conoceProductos {
+    padding: 2rem 1rem; }
+    .conoceProductos h3 {
+      text-align: center; }
+      .conoceProductos h3 a {
+        float: unset;
+        text-align: center; }
+  .sliderCatalogo {
+    padding: 2rem 1rem; }
+  .imagen__nosotros__superior img {
+    width: 85%; }
+  .header__nosotros {
+    font-size: 2.5rem; }
+  .nosotros__texto__superior {
+    width: 75%; }
+  .seccion__caracteristicas__productos {
+    width: 75%;
+    padding: 1rem; }
+  .logo-libelulita img {
+    width: 85%; }
+  .header2__nosotros {
+    font-size: 1.8rem;
+    margin: auto; }
+  .nosotros__texto__inferior {
+    width: 75%; }
+  .header3__nosotros {
+    font-size: 1.7rem;
+    width: 85%; }
+  .contacto2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify; }
+  .contacto-titulo {
+    font-size: 4rem; }
+  .contacto-datos {
+    width: 80%; }
+  .mensaje-final-contacto {
+    width: 100%; }
+  .direccion-retiro {
+    font-size: 1.3rem;
+    font-weight: bold; }
+  .correo-electronico {
+    font-size: 1.3rem;
+    font-weight: bold; }
+  .whatsapp {
+    font-size: 1.3rem;
+    font-weight: bold; }
+  .mensaje-final-contacto {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 2rem; }
+  .producto__individual {
+    width: 85%; }
+  .banner-comprar a {
+    font-size: 1.4rem; }
+  .producto__individual__texto b {
+    text-transform: lowercase;
+    font-weight: normal; }
+  .imagen__producto__individual {
+    display: flex;
+    justify-content: center; }
+    .imagen__producto__individual img {
+      width: 190%; }
+  .owl-nav {
+    display: none; }
+  .producto .productoTexto {
+    justify-content: center;
+    flex-wrap: wrap; }
+    .producto .productoTexto .leyendas-productos {
+      width: 100%; }
+      .producto .productoTexto .leyendas-productos p {
+        text-align: center; }
+    .producto .productoTexto .boton-producto {
+      display: block;
+      margin-top: .5rem; }
+  .mayoristas, .productos, .preguntas {
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem; }
+    .mayoristas::before, .productos::before, .preguntas::before {
+      width: 100%;
+      height: 95%;
+      opacity: .1; }
+    .mayoristas__txt h1, .productos__txt h1, .preguntas__txt h1 {
+      font-size: 3rem;
+      line-height: 3.5rem;
+      text-align: center; }
+      .mayoristas__txt h1 label, .productos__txt h1 label, .preguntas__txt h1 label {
+        display: none; }
+    .mayoristas__txt ul, .productos__txt ul, .preguntas__txt ul {
+      list-style: none;
+      font-size: 1.2rem;
+      padding: 0; }
+      .mayoristas__txt ul li, .productos__txt ul li, .preguntas__txt ul li {
+        font-family: "Montserrat", sans-serif; }
+    .mayoristas__txt h2,
+    .mayoristas__txt h3, .productos__txt h2,
+    .productos__txt h3, .preguntas__txt h2,
+    .preguntas__txt h3 {
+      margin-left: 0;
+      text-align: center; }
+    .mayoristas__txt .btnProductoPink, .productos__txt .btnProductoPink, .preguntas__txt .btnProductoPink {
+      margin-left: 0; }
+    .mayoristas .parrafo, .productos .parrafo, .preguntas .parrafo {
+      font-size: 1.2rem;
+      max-width: 450px;
+      width: 100%;
+      margin: 1.5rem auto; }
+  .mayoristasTxt {
+    padding: 0 1rem;
+    text-align: center; }
+    .mayoristasTxt h4,
+    .mayoristasTxt p,
+    .mayoristasTxt h5 {
+      margin-left: 0; }
+  .catalogoProductos {
+    margin-top: 0rem; }
+  .seccion__preguntas {
+    margin-top: 1rem; }
+  .titulos-preguntas {
+    font-size: 1.9rem; }
+  .seccion__preguntas {
+    text-align: justify; }
+  .ayuda {
+    text-align: center; }
+  .contacto__email h3 {
+    font-size: 1.5rem;
+    font-weight: bold; }
+  .contacto__whatsApp h3 {
+    font-size: 1.5rem;
+    font-weight: bold; }
+  .contacto h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left; }
+  .contacto__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; }
+  .footer {
+    padding: 2rem 1rem; }
+    .footer h4,
+    .footer a {
+      margin-top: 1rem; } }
+
+/*Medium devices*/
+@media only screen and (min-width: 768px) {
+  .carrouselIndex .carousel-inner .carousel-item .carousel-caption {
+    padding: 0 5rem; }
+    .carrouselIndex .carousel-inner .carousel-item .carousel-caption .title3,
+    .carrouselIndex .carousel-inner .carousel-item .carousel-caption .title2 {
+      font-size: 3rem;
+      line-height: 2.5rem; }
+      .carrouselIndex .carousel-inner .carousel-item .carousel-caption .title3 br,
+      .carrouselIndex .carousel-inner .carousel-item .carousel-caption .title2 br {
+        display: none; }
+    .carrouselIndex .carousel-inner .carousel-item .carousel-caption .title1 {
+      font-size: 3.5rem; }
+      .carrouselIndex .carousel-inner .carousel-item .carousel-caption .title1::after {
+        width: 30%;
+        right: 10%; }
+  .productosDestacados {
+    padding: 3rem 1rem; }
+  .productosDestacados #productos .item a {
+    height: 40vh; }
+    .productosDestacados #productos .item a span {
+      font-size: 2rem; }
+  .texto {
+    padding: 0rem 1rem 3rem 1rem; }
+    .texto h2 {
+      font-size: 2rem;
+      line-height: 2.3rem;
+      text-align: center; }
+      .texto h2 br {
+        display: none; }
+  .conoceProductos {
+    padding: 2rem 1rem; }
+    .conoceProductos h3 {
+      text-align: center; }
+      .conoceProductos h3 a {
+        float: unset;
+        text-align: center; }
+  .sliderCatalogo {
+    padding: 2rem 1rem; }
+  .imagen__nosotros__superior img {
+    width: 90%; }
+  .header__nosotros {
+    font-size: 4rem; }
+  .nosotros__texto__superior {
+    width: 65%; }
+  .seccion__caracteristicas__productos {
+    width: 65%;
+    padding: 3rem; }
+  .logo-libelulita img {
+    width: 40%; }
+  .header2__nosotros {
+    font-size: 3rem; }
+  .nosotros__texto__inferior {
+    width: 65%; }
+  .header3__nosotros {
+    font-size: 2rem;
+    width: 80%; }
+  .contacto-titulo {
+    margin-left: 8%;
+    margin-top: 4rem;
+    font-size: 5rem; }
+  .contacto2 {
+    display: unset;
+    text-align: left; }
+  .contacto-datos {
+    margin-left: 15%; }
+  .direccion-retiro {
+    font-size: 2.2rem;
+    font-weight: unset;
+    font-family: 'Cormorant Garamond', serif; }
+    .direccion-retiro span {
+      font-style: italic; }
+  .correo-electronico {
+    font-size: 2.2rem;
+    font-weight: unset;
+    font-family: 'Cormorant Garamond', serif; }
+    .correo-electronico span {
+      font-style: italic; }
+  .whatsapp {
+    font-size: 2.2rem;
+    font-weight: unset;
+    font-family: 'Cormorant Garamond', serif; }
+  .mensaje-final-contacto {
+    font-size: 2.2rem;
+    font-weight: unset;
+    text-align: left;
+    margin-bottom: 6rem;
+    width: 80%;
+    font-family: 'Cormorant Garamond', serif; }
+  .producto__individual {
+    width: 50%; }
+  .banner-comprar a {
+    font-size: 1.5rem; }
+  .producto__individual__texto b {
+    text-transform: uppercase;
+    font-weight: bold; }
+  .imagen__producto__individual img {
+    width: 100%; }
+  .owl-nav {
+    display: block; }
+  .mayoristas, .productos, .preguntas {
+    text-align: center; }
+    .mayoristas__txt h1, .productos__txt h1, .preguntas__txt h1 {
+      font-size: 4.5rem; }
+  .mayoristasTxt {
+    padding: 0 1rem;
+    text-align: center; }
+    .mayoristasTxt h4,
+    .mayoristasTxt p,
+    .mayoristasTxt h5 {
+      margin-left: 0; }
+  .seccion__preguntas {
+    margin-top: 2.5rem;
+    text-align: justify; }
+  .titulos-preguntas {
+    text-align: left;
+    font-size: 2.5rem; }
+  .ayuda {
+    text-align: unset; }
+  .contacto__email h3 {
+    font-size: 2.2rem;
+    font-weight: unset;
+    font-family: "Cormorant Garamond", serif; }
+  .contacto__email span {
+    font-style: italic; }
+  .contacto__whatsApp h3 {
+    font-size: 2.2rem;
+    font-weight: unset;
+    font-family: "Cormorant Garamond", serif; }
+  .contacto h5 {
+    font-size: 2rem;
+    font-weight: unset;
+    font-family: "Cormorant Garamond", serif; }
+  .contacto__info {
+    align-items: unset; }
+  .footer {
+    padding: 1rem 1rem; }
+    .footer h4,
+    .footer a {
+      margin-top: 0; } }
+
+/*Large Devices*/
+@media only screen and (min-width: 950px) {
+  p {
+    font-size: 1.2rem; }
+  .carrouselIndex .carousel-inner .carousel-item .carousel-caption {
+    padding: 0 7.5rem; }
+    .carrouselIndex .carousel-inner .carousel-item .carousel-caption .title3,
+    .carrouselIndex .carousel-inner .carousel-item .carousel-caption .title2 {
+      font-size: 5rem;
+      line-height: 4rem; }
+      .carrouselIndex .carousel-inner .carousel-item .carousel-caption .title3 br,
+      .carrouselIndex .carousel-inner .carousel-item .carousel-caption .title2 br {
+        display: none; }
+    .carrouselIndex .carousel-inner .carousel-item .carousel-caption .title1 {
+      font-size: 7rem; }
+      .carrouselIndex .carousel-inner .carousel-item .carousel-caption .title1::after {
+        width: 50%;
+        right: 0%; }
+  .productosDestacados {
+    padding: 3rem 1rem; }
+  .productosDestacados #productos .item a {
+    height: 60vh; }
+    .productosDestacados #productos .item a span {
+      font-size: 3.5rem; }
+  .texto {
+    padding: 0rem 1rem 3rem 1rem; }
+    .texto h2 {
+      font-size: 3.6rem;
+      line-height: 3.5rem;
+      text-align: center; }
+      .texto h2 br {
+        display: none; }
+  .conoceProductos {
+    padding: 2rem 1rem; }
+    .conoceProductos h3 {
+      text-align: center; }
+      .conoceProductos h3 a {
+        float: unset;
+        text-align: center; }
+  .sliderCatalogo {
+    padding: 2rem 1rem; }
+  .imagen__nosotros__superior img {
+    width: 90%; }
+  .header__nosotros {
+    font-size: 4.5rem; }
+  .nosotros__texto__superior {
+    width: 55%; }
+  .seccion__caracteristicas__productos {
+    width: 55%; }
+  .logo-libelulita img {
+    width: 40%; }
+  .header2__nosotros {
+    font-size: 3.2rem; }
+  .nosotros__texto__inferior {
+    width: 55%; }
+  .header3__nosotros {
+    font-size: 2.5rem;
+    width: 80%; }
+  .contacto-titulo {
+    margin-left: 10%; }
+  .mensaje-final-contacto {
+    width: 50%; }
+  .banner-comprar a {
+    font-size: 1.8rem; }
+  .contacto h5 {
+    width: 80%; } }
+
+@media only screen and (min-width: 992px) {
+  .mayoristas, .productos, .preguntas {
+    text-align: unset;
+    margin-top: 1rem;
+    padding-top: 2rem; }
+    .mayoristas::before, .productos::before, .preguntas::before {
+      width: 55%;
+      opacity: 1; }
+    .mayoristas__txt h1, .productos__txt h1, .preguntas__txt h1 {
+      font-size: 4.5rem;
+      line-height: 5rem;
+      text-align: initial; }
+      .mayoristas__txt h1 label, .productos__txt h1 label, .preguntas__txt h1 label {
+        display: inline-block; }
+      .mayoristas__txt h1 .label2, .productos__txt h1 .label2, .preguntas__txt h1 .label2 {
+        display: none; }
+    .mayoristas__txt h2,
+    .mayoristas__txt h3, .productos__txt h2,
+    .productos__txt h3, .preguntas__txt h2,
+    .preguntas__txt h3 {
+      margin-left: 5rem;
+      text-align: unset; }
+    .mayoristas__txt ul, .productos__txt ul, .preguntas__txt ul {
+      list-style: initial;
+      padding: initial; }
+    .mayoristas__txt .btnProductoPink, .productos__txt .btnProductoPink, .preguntas__txt .btnProductoPink {
+      margin-left: 5rem; }
+    .mayoristas .preguntas__header label, .productos .preguntas__header label, .preguntas .preguntas__header label {
+      display: none; }
+    .mayoristas .preguntas__header i, .productos .preguntas__header i, .preguntas .preguntas__header i {
+      margin-left: 2rem; }
+    .mayoristas .parrafo, .productos .parrafo, .preguntas .parrafo {
+      max-width: 350px;
+      width: 100%;
+      font-size: 1.2rem; }
+  .mayoristasTxt {
+    padding: 3rem 1rem;
+    text-align: unset; }
+    .mayoristasTxt h4,
+    .mayoristasTxt p,
+    .mayoristasTxt h5 {
+      margin-left: 5rem; }
+  .catalogoProductos {
+    margin-top: 3rem; } }
+
+@media only screen and (min-width: 1200px) {
+  .compraAhora {
+    text-align: unset; }
+    .compraAhora h4 a {
+      margin-top: 0rem;
+      float: right; }
+    .compraAhora h4 br {
+      display: none; }
+  .carrouselIndex .carousel-inner .carousel-item .carousel-caption {
+    padding: 0 3rem; }
+  .texto {
+    padding: 0rem 1rem 3rem 1rem; }
+    .texto h2 {
+      font-size: 3.6rem;
+      line-height: 3.5rem;
+      text-align: center; }
+      .texto h2 br {
+        display: block; }
+  .imagen__nosotros__superior img {
+    width: 90%; }
+  .header__nosotros {
+    font-size: 5.4rem; }
+  .nosotros__texto__superior {
+    width: 55%; }
+  .seccion__caracteristicas__productos {
+    width: 55%; }
+  .logo-libelulita img {
+    width: 40%; }
+  .header2__nosotros {
+    font-size: 4rem; }
+  .nosotros__texto__inferior {
+    width: 55%; }
+  .header3__nosotros {
+    font-size: 2.8rem;
+    width: 80%; }
+  .mayoristas__txt h1, .productos__txt h1, .preguntas__txt h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+    text-align: initial; }
+  .mayoristas__txt p, .mayoristas__txt ul, .productos__txt p, .productos__txt ul, .preguntas__txt p, .preguntas__txt ul {
+    margin-left: 8rem; }
+  .mayoristas__txt ul li, .productos__txt ul li, .preguntas__txt ul li {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem; }
+  .mayoristas__txt p, .productos__txt p, .preguntas__txt p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.6rem; }
+  .mayoristas .preguntas__header i, .productos .preguntas__header i, .preguntas .preguntas__header i {
+    margin-left: 5rem; }
+  .mayoristas .parrafo, .productos .parrafo, .preguntas .parrafo {
+    max-width: 450px;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    width: 100%;
+    font-family: "Montserrat", sans-serif; }
+  .mayoristas .te-contamos, .productos .te-contamos, .preguntas .te-contamos {
+    margin-top: 2rem; }
+  .producto .productoTexto {
+    justify-content: space-between;
+    flex-wrap: nowrap; }
+    .producto .productoTexto .leyendas-productos {
+      width: initial; }
+      .producto .productoTexto .leyendas-productos p {
+        text-align: left; }
+    .producto .productoTexto .boton-producto {
+      display: block;
+      margin-top: .5rem; } }
+
+@media only screen and (min-width: 1600px) {
+  .imagen__nosotros__superior img {
+    width: 90%; }
+  .header__nosotros {
+    font-size: 6rem; }
+  .nosotros__texto__superior {
+    width: 45%; }
+  .seccion__caracteristicas__productos {
+    width: 45%; }
+  .logo-libelulita img {
+    width: 40%; }
+  .header2__nosotros {
+    font-size: 4.4rem; }
+  .nosotros__texto__inferior {
+    width: 45%; }
+  .header3__nosotros {
+    font-size: 3rem;
+    width: 70%; } }

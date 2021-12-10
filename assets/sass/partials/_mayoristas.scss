@@ -1,0 +1,93 @@
+/*Estilos Mayoristas*/
+
+
+.mayoristas{
+    margin-top: 4rem;
+    position: relative;
+    height: 28rem;
+    
+    &::before{
+        position: absolute;
+        content: "";
+        top:0;
+        right: 0;
+        width: 60%;
+        height: 90%;
+        background-image: url('../assets/img/mayoristas/banner-mayyoristas.png');
+        background-size: cover;
+        background-position: center center;
+        z-index: -1;
+    }
+
+    &__txt{
+        position: relative;
+        
+        h1{
+            font-size: 5rem;
+            font-family: $cormorant;
+            color: $brown;
+            line-height: 5rem;
+            span{
+                font-style: italic;
+            }
+    
+        }
+
+        h2{
+            margin-top: 2rem;
+            font-family: $montserrat;
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-left: 5rem;
+        }
+
+        h3{
+            font-family: $prata;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-left: 5rem;
+        }
+
+        .btnProductoPink{
+            margin-top: 2rem;
+            margin-left: 5rem;
+        }
+
+    }
+
+}
+
+.mayoristasTxt{
+    margin-top: 1rem;
+    padding: 3rem 1rem;
+    h4{
+        font-family: $montserrat;
+        line-height: 2rem;
+        margin-left: 5rem;
+        a{
+            text-decoration: none;
+            color: $black;
+            transition: all .3s ease;
+
+            &:hover{
+                color: $grey;
+            }
+        }
+    }
+
+    p{
+        margin-left: 5rem;
+        margin-top: 2rem;
+        font-family: $montserrat;
+        
+    }
+
+    h5{
+        margin-top: 2rem;
+        margin-left: 5rem;
+        font-size: 2rem;
+        font-family: $cormorant;
+        text-transform: uppercase;
+    }
+}
+

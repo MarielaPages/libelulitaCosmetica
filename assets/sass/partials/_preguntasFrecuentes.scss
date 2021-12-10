@@ -1,0 +1,58 @@
+/*Preguntas Frecuentes*/
+
+.preguntas{
+    margin-top: 4rem;
+    position: relative;
+    height: 28rem;
+
+    &::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        width: 53%;
+        height: 100%;
+        background-image: url("../assets/img/preguntas-frecuentes-portada.png");
+        background-size:cover;
+        background-position: center center;
+        z-index: -1;
+    }
+    &__header{
+        font-size: 5rem;
+        font-family:$cormorant;
+        line-height: 4.5rem;
+        color: $brown;
+    }
+
+    
+    
+
+    .te-contamos{
+        font-family: 'Cormorant Garamond', serif;
+        line-height: 3rem;
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+}
+
+
+
+
+
+.seccion__preguntas{
+    text-align: justify;
+    padding: 1rem;
+    margin-top: 4rem;
+}
+.titulos-preguntas{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    text-align: left;
+}
+.iamgen2-preguntas{
+    margin-bottom: 4rem;
+}
+.ultima-pregunta{
+    margin-top: 3rem;
+    margin-bottom: 8rem;
+}

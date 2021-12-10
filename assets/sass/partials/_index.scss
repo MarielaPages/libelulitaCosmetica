@@ -1,0 +1,236 @@
+/*INICIA ESTILOS INDEX*/
+
+
+.carrouselIndex {
+    
+    .carousel-control-prev-icon{
+        background-color: #ffffff00 !important;
+    }
+    .carousel-control-next-icon{
+        background-color: #ffffff00 !important;
+    }
+    
+    .carousel-inner {
+        .carousel-item {
+            position: relative;
+
+            img {
+                filter: contrast(.8);
+            }
+
+            .carousel-caption {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                z-index: 2;
+                max-width: 1200px;
+                padding: 1.5rem;
+
+                .title1 {
+                    font-family: $prata;
+                    font-size: 7rem;
+                    width: 100%;
+                    text-shadow: 0 0 10px #646464;
+                    text-align: left;
+
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        width: 50%;
+                        height: 5vh;
+                        top: 0;
+                        right: 0;
+                        background-image: url("../assets/img/index/iconos.png");
+                        background-size: contain;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        filter: drop-shadow(0px 0px 10px #646464);
+                    }
+
+                }
+
+                .title2 {
+                    font-family: $cormorant;
+                    font-size: 4rem;
+                    text-shadow: 0 0 7px #646464;
+                    font-size: 5rem;
+                    text-align: left;
+                    line-height: 4rem;
+
+                    label {
+                        font-family: $prata;
+                    }
+
+                    span {
+                        color: $green;
+                        text-align: right;
+                    }
+                }
+
+                .title3 {
+                    font-family: $cormorant;
+                    font: 5rem;
+                    text-align: left;
+                    line-height: 4.5rem;
+                    text-shadow: 0 0 7px #646464;
+
+                    span {
+                        font-weight: 600;
+                    }
+
+                    label {
+                        font-family: $prata;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.productosDestacados {
+    padding: 5rem 1rem;
+
+    #productos {
+        .item {
+            a {
+                display: block;
+                width: 100%;
+                height: 60vh;
+                background-position: center center;
+                background-size: cover;
+                text-decoration: none;
+                position: relative;
+                padding: 1rem;
+                z-index: 1;
+
+                &::after {
+                    position: absolute;
+                    content: " ";
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background: rgb(0, 0, 0);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8606793059020483) 100%);
+                }
+
+
+                span {
+                    color: $pink;
+                    font-size: 3.5rem;
+                    font-family: $prata;
+                    text-shadow: 0px 1px 3px #8d8d8d;
+                    position: absolute;
+                    right: .5rem;
+                    bottom: 0;
+                    z-index: 2;
+
+                }
+
+                &.mascarilla {
+                    background-image: url('../assets/img/index/mascarilla.png');
+                }
+
+                &.aguaRosas {
+                    background-image: url('../assets/img/index/aguadeRosas.jpg');
+                }
+
+                &.miel {
+                    background-image: url('../assets/img/index/miel.jpg');
+                }
+
+                &:hover {
+
+                    filter: sepia(.5)
+                }
+
+            }
+
+        }
+
+    }
+}
+
+.texto {
+    padding: 4rem 1rem 7rem 1rem;
+
+    h2 {
+        font-family: $prata;
+        line-height: 3.5rem;
+        color: $brown;
+
+        span {
+            font-family: $cormorant;
+            font-weight: 300;
+        }
+
+        label {
+            float: right;
+        }
+    }
+}
+
+.conoceProductos {
+    padding: 5rem 1rem;
+    background-color: $pink;
+
+    h3 {
+        font-family: $prata;
+        font-size: 1.5rem;
+
+        a {
+            text-decoration: none;
+            font-family: $montserrat;
+            text-align: right;
+            color: $black;
+            display: block;
+            font-weight: 300;
+            position: relative;
+            right: 0;
+            transition: all .3s ease;
+
+            i {
+                font-weight: 300;
+            }
+
+            &:hover {
+                right: 1rem;
+                color: $white;
+                transition: all .3s ease;
+            }
+        }
+    }
+
+}
+
+.sliderCatalogo {
+    padding: 5rem 1rem;
+
+    #sliderCatalogo {
+        .item {
+            img {
+                // border-radius: 1rem;
+                transition: all .3s ease;
+
+            }
+
+            .btnContacto {
+                
+                .btnProducto {
+                    position: relative;
+                    bottom: 2rem;
+                }
+
+                .wApp {
+                    float: right;
+                    position: relative;
+                    bottom: 4rem;
+                    right: 1rem;
+                }
+            }
+        }
+    }
+
+}
